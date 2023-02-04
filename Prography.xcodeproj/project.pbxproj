@@ -8,17 +8,41 @@
 
 /* Begin PBXBuildFile section */
 		1F738DE9298DE3D9009AFD53 /* PrographyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F738DE8298DE3D9009AFD53 /* PrographyApp.swift */; };
-		1F738DEB298DE3D9009AFD53 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F738DEA298DE3D9009AFD53 /* ContentView.swift */; };
+		1F738DEB298DE3D9009AFD53 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F738DEA298DE3D9009AFD53 /* MainView.swift */; };
 		1F738DED298DE3DB009AFD53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F738DEC298DE3DB009AFD53 /* Assets.xcassets */; };
 		1F738DF0298DE3DB009AFD53 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F738DEF298DE3DB009AFD53 /* Preview Assets.xcassets */; };
+		1F738DF8298DF4EB009AFD53 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F738DF7298DF4EB009AFD53 /* DetailView.swift */; };
+		1F738DFA298DF4F8009AFD53 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F738DF9298DF4F8009AFD53 /* ProfileView.swift */; };
+		1F738DFC298DF502009AFD53 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F738DFB298DF502009AFD53 /* SearchView.swift */; };
+		1F738DFF298DF559009AFD53 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F738DFE298DF559009AFD53 /* Movie.swift */; };
+		1F738E01298DF588009AFD53 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F738E00298DF588009AFD53 /* User.swift */; };
+		1F738E03298DF612009AFD53 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F738E02298DF612009AFD53 /* MainViewModel.swift */; };
+		1F738E05298DF624009AFD53 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F738E04298DF624009AFD53 /* DetailViewModel.swift */; };
+		1F738E07298DF62D009AFD53 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F738E06298DF62D009AFD53 /* ProfileViewModel.swift */; };
+		1F738E09298DF637009AFD53 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F738E08298DF637009AFD53 /* SearchViewModel.swift */; };
+		1F738E0D298DF7E8009AFD53 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F738E0C298DF7E8009AFD53 /* RootView.swift */; };
+		1F738E10298E0B83009AFD53 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1F738E0F298E0B83009AFD53 /* Alamofire */; };
+		1F738E13298E0B90009AFD53 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1F738E12298E0B90009AFD53 /* Kingfisher */; };
+		1F738E15298E20FF009AFD53 /* ExpandableText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F738E14298E20FF009AFD53 /* ExpandableText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1F738DE5298DE3D9009AFD53 /* Prography.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prography.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F738DE8298DE3D9009AFD53 /* PrographyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrographyApp.swift; sourceTree = "<group>"; };
-		1F738DEA298DE3D9009AFD53 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1F738DEA298DE3D9009AFD53 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		1F738DEC298DE3DB009AFD53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F738DEF298DE3DB009AFD53 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1F738DF7298DF4EB009AFD53 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		1F738DF9298DF4F8009AFD53 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		1F738DFB298DF502009AFD53 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		1F738DFE298DF559009AFD53 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		1F738E00298DF588009AFD53 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1F738E02298DF612009AFD53 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		1F738E04298DF624009AFD53 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		1F738E06298DF62D009AFD53 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		1F738E08298DF637009AFD53 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		1F738E0C298DF7E8009AFD53 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		1F738E14298E20FF009AFD53 /* ExpandableText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F738E13298E0B90009AFD53 /* Kingfisher in Frameworks */,
+				1F738E10298E0B83009AFD53 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				1F738DE8298DE3D9009AFD53 /* PrographyApp.swift */,
-				1F738DEA298DE3D9009AFD53 /* ContentView.swift */,
+				1F738DF6298DF4A8009AFD53 /* Views */,
+				1F738DFD298DF532009AFD53 /* Model */,
 				1F738DEC298DE3DB009AFD53 /* Assets.xcassets */,
 				1F738DEE298DE3DB009AFD53 /* Preview Content */,
 			);
@@ -65,6 +92,40 @@
 				1F738DEF298DE3DB009AFD53 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1F738DF6298DF4A8009AFD53 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F738E0C298DF7E8009AFD53 /* RootView.swift */,
+				1F738DEA298DE3D9009AFD53 /* MainView.swift */,
+				1F738E02298DF612009AFD53 /* MainViewModel.swift */,
+				1F738DF7298DF4EB009AFD53 /* DetailView.swift */,
+				1F738E04298DF624009AFD53 /* DetailViewModel.swift */,
+				1F738DF9298DF4F8009AFD53 /* ProfileView.swift */,
+				1F738E06298DF62D009AFD53 /* ProfileViewModel.swift */,
+				1F738DFB298DF502009AFD53 /* SearchView.swift */,
+				1F738E08298DF637009AFD53 /* SearchViewModel.swift */,
+				1F738E16298E2169009AFD53 /* Custom */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1F738DFD298DF532009AFD53 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1F738DFE298DF559009AFD53 /* Movie.swift */,
+				1F738E00298DF588009AFD53 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1F738E16298E2169009AFD53 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				1F738E14298E20FF009AFD53 /* ExpandableText.swift */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +144,10 @@
 			dependencies = (
 			);
 			name = Prography;
+			packageProductDependencies = (
+				1F738E0F298E0B83009AFD53 /* Alamofire */,
+				1F738E12298E0B90009AFD53 /* Kingfisher */,
+			);
 			productName = Prography;
 			productReference = 1F738DE5298DE3D9009AFD53 /* Prography.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +176,10 @@
 				Base,
 			);
 			mainGroup = 1F738DDC298DE3D9009AFD53;
+			packageReferences = (
+				1F738E0E298E0B83009AFD53 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				1F738E11298E0B90009AFD53 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 1F738DE6298DE3D9009AFD53 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +206,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F738DEB298DE3D9009AFD53 /* ContentView.swift in Sources */,
+				1F738E09298DF637009AFD53 /* SearchViewModel.swift in Sources */,
+				1F738DFC298DF502009AFD53 /* SearchView.swift in Sources */,
+				1F738E15298E20FF009AFD53 /* ExpandableText.swift in Sources */,
+				1F738DFA298DF4F8009AFD53 /* ProfileView.swift in Sources */,
+				1F738DFF298DF559009AFD53 /* Movie.swift in Sources */,
+				1F738E03298DF612009AFD53 /* MainViewModel.swift in Sources */,
+				1F738E07298DF62D009AFD53 /* ProfileViewModel.swift in Sources */,
+				1F738E05298DF624009AFD53 /* DetailViewModel.swift in Sources */,
+				1F738DEB298DE3D9009AFD53 /* MainView.swift in Sources */,
+				1F738E0D298DF7E8009AFD53 /* RootView.swift in Sources */,
+				1F738DF8298DF4EB009AFD53 /* DetailView.swift in Sources */,
 				1F738DE9298DE3D9009AFD53 /* PrographyApp.swift in Sources */,
+				1F738E01298DF588009AFD53 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +419,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1F738E0E298E0B83009AFD53 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		1F738E11298E0B90009AFD53 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1F738E0F298E0B83009AFD53 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F738E0E298E0B83009AFD53 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		1F738E12298E0B90009AFD53 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F738E11298E0B90009AFD53 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1F738DDD298DE3D9009AFD53 /* Project object */;
 }
