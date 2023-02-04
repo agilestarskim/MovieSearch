@@ -37,8 +37,8 @@ struct MainView: View {
                     Spacer()
                 }
                 .padding([.horizontal, .top])
-                //LazyVStack: 보이지도 않는 뷰를 미리 그리지 않고 화면에 나타나기 직전에 그림
                 if vm.isLoaded {
+                    //LazyVStack: 보이지도 않는 뷰를 미리 그리지 않고 화면에 나타나기 직전에 그림
                     LazyVStack {
                         ForEach(vm.movies, id: \.id) { movie in
                             VStack(alignment: .leading, spacing: 10){
@@ -62,6 +62,9 @@ struct MainView: View {
                                     .frame(height: 500)
                                     .cornerRadius(10)
                                     .shadow(radius: 5)
+                                
+                                HashTagViews(strings: movie.genres)
+                                
                                 ExpandableText(movie.filteredSummary, lineLimit: 3, font: UIFont.preferredFont(forTextStyle: .caption1))
                             }
                             .padding()
