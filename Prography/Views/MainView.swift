@@ -45,24 +45,28 @@ struct MainView: View {
                                 HStack(alignment: .bottom) {
                                     Text(movie.title)
                                         .font(.title2.bold())
-                                    Text(movie.yearString)
+                                    Text("(\(movie.yearString))")
                                     Spacer()
                                     
                                 }
                                 .frame(height: 30)
                                 
-                                KFImage(URL(string: movie.largeCoverImage))
-                                    .placeholder {
-                                        Rectangle()
-                                            .fill(.gray)
-                                            .frame(minWidth: 0, maxWidth: .infinity)
-                                    }
-                                    .resizable()
-                                    .frame(minWidth: 0, maxWidth: .infinity)
-                                    .frame(height: 500)
-                                    .cornerRadius(10)
-                                    .shadow(radius: 5)
-                                
+                                NavigationLink {
+                                    DetailView(vm: DetailView.ViewModel(movie: movie))
+                                        .hideTabBar()
+                                } label: {
+                                    KFImage(URL(string: movie.largeCoverImage ?? ""))
+                                        .placeholder {
+                                            Rectangle()
+                                                .fill(.gray)
+                                                .frame(minWidth: 0, maxWidth: .infinity)
+                                        }
+                                        .resizable()
+                                        .frame(minWidth: 0, maxWidth: .infinity)
+                                        .frame(height: 500)
+                                        .cornerRadius(10)
+                                        .shadow(radius: 5)
+                                }
                                 HashTagViews(strings: movie.genres)
                                 
                                 ExpandableText(movie.filteredSummary, lineLimit: 3, font: UIFont.preferredFont(forTextStyle: .caption1))
@@ -77,12 +81,13 @@ struct MainView: View {
                         }
                     }
                 } else {
-                    VStack {
-                        ProgressView().progressViewStyle(CircularProgressViewStyle())
-                    }
-                    .padding(.top, 30)
+                    ProgressView().progressViewStyle(CircularProgressViewStyle())
+                        .padding(.top, 30)
                 }
                 
+            }
+            .onAppear {
+                UITabBar.showTabBar()
             }
         }
     }

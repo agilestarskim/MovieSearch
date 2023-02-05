@@ -10,6 +10,15 @@
       }
     },
     {
+      "identity" : "hidabletabview-swiftui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AliMert/HidableTabView-SwiftUI.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "9acb7587050fabadd38b7563aaa19f93ba133b73"
+      }
+    },
+    {
       "identity" : "kingfisher",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/onevcat/Kingfisher.git",

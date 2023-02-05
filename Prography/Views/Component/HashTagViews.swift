@@ -12,6 +12,8 @@ struct HashTagViews: View {
     let secondStrings: [String]
     
     init(strings: [String]) {
+        //해쉬태그가 5개 이상이면 두 줄로 나눠서 보여주기 위해 배열을 두개 만듬
+        //TODO: 배열 하나를 사용해 잘리지 않고 여러줄 표현하기 (horizontal scroll view를 이용해도 됨)
         if strings.count < 5 {
             self.firstStrings = strings
             self.secondStrings = []

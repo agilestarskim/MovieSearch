@@ -34,11 +34,10 @@ struct ExpandableText: View {
         
         ZStack(alignment: .bottomLeading) {
             Group {
-                        Text(self.expanded ? text : shrinkText)
-                        + Text(moreLessText)
-                        .bold()
-                        .foregroundColor(.blue)
-                
+                Text(self.expanded ? text : shrinkText)
+                + Text(moreLessText)
+                .bold()
+                .foregroundColor(.blue)                
             }
             .lineLimit(expanded ? nil : lineLimit)
                 .background(

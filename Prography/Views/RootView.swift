@@ -17,7 +17,7 @@ struct RootView: View {
             }
           SearchView()
             .tabItem {
-              Image(systemName: "magnifyingglass")
+              Image(systemName: "magnifyingglass")                    
               Text("검색")
             }
           ProfileView()
