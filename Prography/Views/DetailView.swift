@@ -76,10 +76,7 @@ struct DetailView: View {
                                 .alert("서비스 준비 중입니다.", isPresented: $vm.showingAlert) {
                                     Button("확인"){}
                                 }
-                                
-                                Button {
-                                    
-                                } label: {
+                                ShareLink(item: URL(string: vm.movie.url)!){
                                     Image(systemName: "square.and.arrow.up")
                                         .foregroundColor(.primary)
                                         .fontWeight(.semibold)

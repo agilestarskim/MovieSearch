@@ -37,6 +37,7 @@ struct Movie: Codable, Equatable  {
     }
     
     let id: Int
+    let url: String
     let title: String
     let year: Int
     let rating: Float
@@ -52,7 +53,7 @@ struct Movie: Codable, Equatable  {
     let descriptionIntro: String?
     
     enum CodingKeys: String, CodingKey {
-        case id, title, year, rating, runtime, genres,summary
+        case id, url, title, year, rating, runtime, genres,summary
         case smallCoverImage = "small_cover_image"
         case mediumCoverImage = "medium_cover_image"
         case largeCoverImage = "large_cover_image"
@@ -81,7 +82,7 @@ struct Movie: Codable, Equatable  {
     //preview 사용을 위해 
     static var testData: Movie {
         Movie(
-            id: 13106, title: "Avengers: Endgame",year: 2019, rating: 8.4, runtime: 181,
+            id: 13106, url: "https://yts.mx/movies/the-paper-1994", title: "Avengers: Endgame",year: 2019, rating: 8.4, runtime: 181,
             genres: ["Action","Adventure","Drama","Sci-Fi"],
             summary: "The life and times of Stiv Bators, legendary frontman of the Dead Boys and The Lords of The New Church.",
             smallCoverImage: "https://yts.mx/assets/images/movies/avengers_endgame_2019/small-cover.jpg",
