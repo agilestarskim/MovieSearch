@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct PrographyApp: App {
+struct MovieSearchApp: App {
     @ObservedObject private var user = User()
     var body: some Scene {
         WindowGroup {
